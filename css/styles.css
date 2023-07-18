@@ -85,32 +85,66 @@
     margin: 0 auto;
 }
 
-@media (min-width: 720px){
-    .paquetes img{
-        margin-bottom: 1rem;
+/* Breakpoint >380px */
+@media (min-width: 380px) {
+    /* Ajustes para asegurar el contenido dentro del contenedor en el index */
+    .container {
+      overflow-x: hidden;
     }
-    .paquetes{
-        flex-flow: row nowrap;
-        justify-content: space-around;
+  
+    /* Ajustes para las cards de paquetes */
+    .paquetes {
+      justify-content: space-between;
     }
-    .paquetes-de-viaje{
-        max-width:40vw;
+    .paquetes-de-viaje {
+      max-width: 48%;
     }
-    .pack-desktop-text{
-        display: block;
+  }
+  
+  /* Breakpoint >768px */
+  @media (min-width: 768px) {
+    /* Ajustes para evitar scroll horizontal y ajustar la armonía de la página */
+    .container {
+      overflow-x: hidden;
     }
-    .price{
-        /* flex-flow: column nowrap; */
-        /* align-items: center;
-        justify-content: center; */
-        display: gird;
-        /* place-items: center; */
+  
+    /* Ajustes para las cards de paquetes */
+    .paquetes {
+      justify-content: space-between;
     }
-    /* formulario */
-    .contacto{
-        max-width: 40%;
+    .paquetes-de-viaje {
+      max-width: 31%;
     }
-    /* nosotros */
-
-   
-}
+  }
+  
+  /* Breakpoint >1024px */
+  @media (min-width: 1024px) {
+    /* Ajustes adicionales para el breakpoint de >1024px */
+    .paquetes {
+      justify-content: space-around;
+    }
+    .paquetes-de-viaje {
+      max-width: 20%;
+    }
+  
+    /* Ajustes para el encabezado de paquetes */
+    .img-header {
+      height: 35rem;
+    }
+  
+    /* Ajustes para los precios en el breakpoint >1024px */
+    .price {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    /* Ajustes para el mapa en el breakpoint >1024px */
+    .map iframe {
+      width: 35rem;
+      height: 35rem;
+    }
+  
+    /* Ajustes para el formulario en el breakpoint >1024px */
+    .contacto {
+      max-width: 30%;
+    }
+  }  
