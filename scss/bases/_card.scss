@@ -1,0 +1,13 @@
+// bases/_card.scss
+@import '../bases/variable'; // Importamos las variables
+
+.card > img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-body {
+  height: 346px;
+}

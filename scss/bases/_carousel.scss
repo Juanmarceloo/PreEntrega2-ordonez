@@ -1,0 +1,7 @@
+// bases/_carousel.scss
+@import '../bases/variable'; // Importamos las variables
+
+.carousel-item img {
+  height: 40rem;
+  object-fit: cover;
+}

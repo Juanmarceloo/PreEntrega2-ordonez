@@ -1,12 +1,18 @@
 {
   "name": "chichi",
   "version": "1.0.0",
-  "description": "",
+  "description": "[link de por el mundo](https://juanmarceloo.github.io/PreEntrega2-ordonez/)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
 }

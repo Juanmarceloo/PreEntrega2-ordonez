@@ -1,150 +1,155 @@
-.carousel-item img{
-    height: 40rem;
-    object-fit:cover;
-}
-.card > img{
+.carousel-item img {
+  height: 40rem;
+  object-fit: cover; }
+
+.card > img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center; }
+
+.card-body {
+  height: 346px; }
+
+.paquetes {
+  margin: 2rem 0;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem; }
+  .paquetes img {
     width: 100%;
-    height: 10rem;
-    object-fit: cover;
-    object-position: center;
-}
-.paquetes{
-    margin: 2rem 0;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-items: center;
-    gap: 2rem;
-}
-.paquetes img{
-    width: 100%;
-    height:20rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-.paquetes-de-viaje{
-    min-width:40vw;
-}
-.paquetes-de-viaje a{
-    display: block;
-    position: relative;
-    /* right: 1rem; */
-}
-.pack-desktop-text{
-    display: none;
-}
-/* nosotros */
-.nosotros-img{
-    width: 100%;
-    height:20rem;
-    object-fit: cover;
-}
-.map iframe{
-    width: 20rem;
     height: 20rem;
-    border-radius: 0.5rem;
-}
-.map-iframe{
-    margin-top: 2rem;
-    padding: 4rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.map-iframe img{
-    width:100%;
+    object-fit: cover;
+    border-radius: 0.5rem; }
+  .paquetes .paquetes-de-viaje {
+    min-width: 40vw; }
+    .paquetes .paquetes-de-viaje a {
+      display: block;
+      position: relative; }
+  .paquetes .pack-desktop-text {
+    display: none; }
+
+.nosotros-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover; }
+
+.map iframe {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.5rem; }
+
+.map-iframe {
+  margin-top: 2rem;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .map-iframe img {
+    width: 100%;
     height: 30rem;
     object-fit: cover;
     position: absolute;
     z-index: -5;
     display: block;
     border-radius: 0.5rem;
-    filter: blur(1px);
-}
-/* paquetes */
-.img-header{
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../img/paquetes.jpg');
-    background-size:cover;
-    background-position:bottom;
-    background-repeat: no-repeat;
-}
-.price{
+    filter: blur(1px); }
 
-    width: 80%;
-    flex-flow: row wrap;
-    text-align: center;
-    /* align-items: center; */
-}
-.price p{
-    margin: 0 auto;
-}
+.img-header {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/paquetes.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
 
-/* Breakpoint >380px */
+.price {
+  width: 80%;
+  flex-flow: row wrap;
+  text-align: center; }
+
+.price p {
+  margin: 0 auto; }
+
 @media (min-width: 380px) {
-    /* Ajustes para asegurar el contenido dentro del contenedor en el index */
-    .container {
-      overflow-x: hidden;
-    }
-  
-    /* Ajustes para las cards de paquetes */
-    .paquetes {
-      justify-content: space-between;
-    }
-    .paquetes-de-viaje {
-      max-width: 48%;
-    }
+  .container {
+    overflow-x: hidden; }
+  .paquetes {
+    justify-content: space-between; }
+  .paquetes-de-viaje {
+    max-width: 48%; } }
+
+@media (min-width: 768px) {
+  .container {
+    overflow-x: hidden; }
+  .paquetes {
+    justify-content: space-between; }
+  .paquetes-de-viaje {
+    max-width: 31%; } }
+
+@media (min-width: 1024px) {
+  .paquetes {
+    justify-content: space-around; }
+  .paquetes-de-viaje {
+    max-width: 20%; }
+  .img-header {
+    height: 35rem; }
+  .price {
+    grid-template-columns: repeat(4, 1fr); }
+  .map iframe {
+    width: 35rem;
+    height: 35rem; }
+  .contacto {
+    max-width: 30%; } }
+
+@media (min-width: 380px) {
+  .container {
+    overflow-x: hidden; }
+  .paquetes {
+    justify-content: space-between; }
+  .paquetes-de-viaje {
+    max-width: 48%; } }
+
+/* Estilos generales */
+
+/* ... Aquí van tus estilos generales ... */
+
+/* Media query para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Ajustes para el header en tablet */
+  .img-header {
+    height: 25rem; /* Ajustar la altura de la imagen del header en tablet */
   }
-  
-  /* Breakpoint >768px */
-  @media (min-width: 768px) {
-    /* Ajustes para evitar scroll horizontal y ajustar la armonía de la página */
-    .container {
-      overflow-x: hidden;
-    }
-  
-    /* Ajustes para las cards de paquetes */
-    .paquetes {
-      justify-content: space-between;
-    }
-    .paquetes-de-viaje {
-      max-width: 31%;
-    }
+
+  /* Ajustes para las tarjetas de paquetes en tablet */
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
   }
-  
-  /* Breakpoint >1024px */
-  @media (min-width: 1024px) {
-    /* Ajustes adicionales para el breakpoint de >1024px */
-    .paquetes {
-      justify-content: space-around;
-    }
-    .paquetes-de-viaje {
-      max-width: 20%;
-    }
-  
-    /* Ajustes para el encabezado de paquetes */
-    .img-header {
-      height: 35rem;
-    }
-  
-    /* Ajustes para los precios en el breakpoint >1024px */
-    .price {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  
-    /* Ajustes para el mapa en el breakpoint >1024px */
-    .map iframe {
-      width: 35rem;
-      height: 35rem;
-    }
-  
-    /* Ajustes para el formulario en el breakpoint >1024px */
-    .contacto {
-      max-width: 30%;
-    }
-  }  
+
+  /* Ajustes para los precios en tablet */
+  .price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ajustes para los botones de compra en tablet */
+  .text-center {
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .paquetes {
+    justify-content: space-around; }
+  .paquetes-de-viaje {
+    max-width: 20%; }
+  .img-header {
+    height: 100px; } }

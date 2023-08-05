@@ -1,0 +1,42 @@
+
+  // utilidades/_media-queries.scss
+  @import '../mixins/mixins'; // Importamos los mixins
+@import '../bases/variable'; // Importamos las variables
+
+@include media-min(380px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .paquetes {
+    justify-content: space-between;
+  }
+  .paquetes-de-viaje {
+    max-width: 48%;
+  }
+}
+
+@include media-min(768px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .paquetes {
+    justify-content: space-between;
+  }
+  .paquetes-de-viaje {
+    max-width: 31%;
+  }
+}
+
+@include media-min(1024px) {
+  .paquetes {
+    justify-content: space-around;
+  }
+  .paquetes-de-viaje {
+    max-width: 20%;
+  }
+
+  .img-header {
+    height: 100px;}
+  }
