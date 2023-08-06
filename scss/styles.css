@@ -1,0 +1,137 @@
+.carousel-item img {
+  height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card > img {
+  width: 100%;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card-body {
+  max-height: 700px !important;
+}
+
+.paquetes {
+  margin: 2rem 0;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+}
+.paquetes img {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.paquetes .paquetes-de-viaje {
+  min-width: 40vw;
+}
+.paquetes .paquetes-de-viaje a {
+  display: block;
+  position: relative;
+}
+.paquetes .pack-desktop-text {
+  display: none;
+}
+
+.nosotros-img {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.map iframe {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+}
+
+.map-iframe {
+  margin-top: 2rem;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.map-iframe img {
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -5;
+  display: block;
+  border-radius: 0.5rem;
+  filter: blur(1px);
+}
+
+.img-header {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/paquetes.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.price {
+  width: 80%;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.price p {
+  margin: 0 auto;
+}
+
+@media (min-width: 380px) {
+  .container {
+    overflow-x: hidden;
+  }
+  .paquetes {
+    justify-content: space-between;
+  }
+  .paquetes-de-viaje {
+    max-width: 48%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    overflow-x: hidden;
+  }
+  .paquetes {
+    justify-content: space-between;
+  }
+  .paquetes-de-viaje {
+    max-width: 20%;
+  }
+  .card-body:nth-child(3) {
+    display: block !important;
+    text-align: center !important;
+  }
+}
+@media (min-width: 1024px) {
+  .paquetes {
+    justify-content: space-around;
+  }
+  .paquetes-de-viaje {
+    max-width: 20%;
+  }
+  .img-header {
+    height: 100px;
+  }
+}/*# sourceMappingURL=styles.css.map */

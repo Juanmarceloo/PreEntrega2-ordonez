@@ -9,7 +9,7 @@
   object-position: center; }
 
 .card-body {
-  height: 346px; }
+  max-height: 700px !important; }
 
 .paquetes {
   margin: 2rem 0;
@@ -91,60 +91,10 @@
   .paquetes {
     justify-content: space-between; }
   .paquetes-de-viaje {
-    max-width: 31%; } }
-
-@media (min-width: 1024px) {
-  .paquetes {
-    justify-content: space-around; }
-  .paquetes-de-viaje {
     max-width: 20%; }
-  .img-header {
-    height: 35rem; }
-  .price {
-    grid-template-columns: repeat(4, 1fr); }
-  .map iframe {
-    width: 35rem;
-    height: 35rem; }
-  .contacto {
-    max-width: 30%; } }
-
-@media (min-width: 380px) {
-  .container {
-    overflow-x: hidden; }
-  .paquetes {
-    justify-content: space-between; }
-  .paquetes-de-viaje {
-    max-width: 48%; } }
-
-/* Estilos generales */
-
-/* ... Aquí van tus estilos generales ... */
-
-/* Media query para tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Ajustes para el header en tablet */
-  .img-header {
-    height: 25rem; /* Ajustar la altura de la imagen del header en tablet */
-  }
-
-  /* Ajustes para las tarjetas de paquetes en tablet */
-  .card {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  /* Ajustes para los precios en tablet */
-  .price {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Ajustes para los botones de compra en tablet */
-  .text-center {
-    text-align: center;
-  }
-}
-
+  .card-body:nth-child(3) {
+    display: block !important;
+    text-align: center !important; } }
 
 @media (min-width: 1024px) {
   .paquetes {

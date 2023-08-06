@@ -25,7 +25,14 @@
     justify-content: space-between;
   }
   .paquetes-de-viaje {
-    max-width: 31%;
+    max-width: 20%;
+  }
+ 
+  
+  .card-body:nth-child(3) {
+   
+    display: block !important;
+    text-align: center !important;
   }
 }
 
